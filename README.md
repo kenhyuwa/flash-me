@@ -15,7 +15,7 @@ composer require ken/flash-me
 and 
 
 ```bash
-php artisan vendor:publish --tag="flash-me"
+php artisan vendor:publish --tag="flashMe"
 ```
 
 ## Optional Setting
@@ -24,7 +24,7 @@ config/flash_me.php
 
 ```php
 /**
- * Change this /path if you load assets front local
+ * Change this /path if you load assets from local
  * example 'css' => asset('/css/app.css'),
  */
 return [
@@ -145,7 +145,7 @@ public function testFlash()
 
 ## Another function 
 
-```
+```php
 flashMe()->success();
 flashMe()->info();
 flashMe()->warning();
@@ -156,7 +156,7 @@ flashMe()->error();
 
 you can display on your master template or single blade, before end of body tag
 
-```
+```php
 @if (flashMe()->ok())
   {!! flashMe_flash() !!}
 @endif

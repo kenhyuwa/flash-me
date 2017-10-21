@@ -1,6 +1,6 @@
 <?php 
 /**
- * Change this /path if you load assets front local
+ * Change this /path if you load assets from local
  * example 'css' => asset('/css/app.css'),
  */
 return [
