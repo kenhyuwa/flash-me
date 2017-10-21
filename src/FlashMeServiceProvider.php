@@ -15,10 +15,10 @@ class FlashMeServiceProvider extends ServiceProvider
 	{
 	    	$this->publishes([
 	        	__DIR__.'/../config' => config_path('flash_me.php'),
-	    	], 'config');
+	    	], 'flashMe');
 	    	$this->publishes([
 	        	__DIR__.'/../lang/en' => resource_path('lang/en'),
-	    	], 'resources');
+	    	], 'flashMe');
 	}
     /**
      * Register bindings in the container.
