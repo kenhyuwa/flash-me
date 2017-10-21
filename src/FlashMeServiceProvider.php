@@ -14,7 +14,7 @@ class FlashMeServiceProvider extends ServiceProvider
 	public function boot()
 	{
 	    	$this->publishes([
-	        	__DIR__.'/../config' => config_path('flash_me.php'),
+	        	__DIR__.'/../config' => config_path(),
 	    	], 'flashMe');
 	    	$this->publishes([
 	        	__DIR__.'/../lang/en' => resource_path('lang/en'),
